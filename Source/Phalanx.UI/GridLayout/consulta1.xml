@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridHeaderLayoutGroup>
+  <headers>
+    <GridHeaderLayout>
+      <nome>PK_ID</nome>
+      <descricao>Codigo</descricao>
+      <tamanho>50</tamanho>
+      <mascara></mascara>
+    </GridHeaderLayout>
+    <GridHeaderLayout>
+      <nome>VL_EXEMPLO</nome>
+      <descricao>Valor Exemplo</descricao>
+      <tamanho>100</tamanho>
+      <mascara>R$ #,0.00#;R$ -#,0.00#</mascara>
+    </GridHeaderLayout>
+      <GridHeaderLayout>
+          <nome>DS_EXEMPLO</nome>
+          <descricao>Nome Exemplo</descricao>
+          <tamanho>200</tamanho>
+          <mascara></mascara>
+      </GridHeaderLayout>
+  </headers>
+</GridHeaderLayoutGroup>

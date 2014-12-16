@@ -1,0 +1,7 @@
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\bin\Debug\Phalanx.Common.dll
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\bin\Debug\Phalanx.Common.pdb
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\bin\Debug\itextsharp.dll
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\bin\Debug\itextsharp.xml
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\obj\Debug\Phalanx.Common.csprojResolveAssemblyReference.cache
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\obj\Debug\Phalanx.Common.dll
+C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Common\obj\Debug\Phalanx.Common.pdb

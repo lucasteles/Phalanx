@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqlQuery>
+  <TABELA>TESTE</TABELA>
+  <CAMPOS>*</CAMPOS>
+  <JOIN></JOIN>
+  <WHERE></WHERE>
+  <ORDER>DS_EXEMPLO,VL_EXEMPLO</ORDER>
+  <EXTRA></EXTRA>
+</SqlQuery>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{393A34FA-5668-48D1-BC8F-6409EE12EE60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phalanx.UI.Controls</RootNamespace>
+    <AssemblyName>Phalanx.UI.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CntItens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CntItens.Designer.cs">
+      <DependentUpon>CntItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Esperando.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Esperando.Designer.cs">
+      <DependentUpon>Esperando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoker.cs" />
+    <Compile Include="MyComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyComboBox.Designer.cs">
+      <DependentUpon>MyComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMenuIcon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyMenuIcon.Designer.cs">
+      <DependentUpon>MyMenuIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyTextBox.Designer.cs">
+      <DependentUpon>MyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperGrade.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SuperGrade.Designer.cs">
+      <DependentUpon>SuperGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="valorXcampo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CntItens.resx">
+      <DependentUpon>CntItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esperando.resx">
+      <DependentUpon>Esperando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComboBox.resx">
+      <DependentUpon>MyComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMenuIcon.resx">
+      <DependentUpon>MyMenuIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTextBox.resx">
+      <DependentUpon>MyTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperGrade.resx">
+      <DependentUpon>SuperGrade.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Phalanx.Common\Phalanx.Common.csproj">
+      <Project>{A697586E-237E-43E5-90C9-7AB83B1922EF}</Project>
+      <Name>Phalanx.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phalanx.DataAccess\Phalanx.DataAccess.csproj">
+      <Project>{ECED0CE5-02E8-46DB-B2F6-815E824B3EF0}</Project>
+      <Name>Phalanx.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

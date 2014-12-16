@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridHeaderLayoutGroup>
+  <headers>
+    <GridHeaderLayout>
+      <nome>PK_ID</nome>
+      <descricao>Codigo</descricao>
+      <tamanho>50</tamanho>
+      <mascara></mascara>
+    </GridHeaderLayout>
+    <GridHeaderLayout>
+      <nome>DS_ITEM</nome>
+      <descricao>Item</descricao>
+      <tamanho>100</tamanho>
+      <mascara></mascara>
+    </GridHeaderLayout>
+  </headers>
+</GridHeaderLayoutGroup>
