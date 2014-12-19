@@ -20,6 +20,56 @@ namespace Phalanx.DataAccess
             get { return dttMain.Columns; }
         }
 
+        #region "Self setters/getters"
+        public Object this[String ColumnName]
+        {
+            get
+            {
+                return this.Get(ColumnName);
+            }
+            set
+            {
+                this.Set(ColumnName,value);
+            }
+        }
+
+        public Object this[int ColumnNumber]
+        {
+            get
+            {
+                return this.Get(ColumnNumber);
+            }
+            set
+            {
+                this.Set(ColumnNumber, value);
+            }
+        }
+
+        public Object this[int RowNumber, int ColumnNumber]
+        {
+            get
+            {
+                return this.Get(RowNumber, ColumnNumber);
+            }
+            set
+            {
+                this.Set(RowNumber, ColumnNumber, value);
+            }
+        }
+
+        public Object this[int RowNumber, string ColumnName]
+        {
+            get
+            {
+                return this.Get(RowNumber, ColumnName);
+            }
+            set
+            {
+                this.Set(RowNumber, ColumnName, value);
+            }
+        }
+        #endregion  
+
         #endregion
 
         #region "private"
@@ -198,9 +248,10 @@ namespace Phalanx.DataAccess
         {
             return dttMain;
         }
- 
+        
 
-        public Object Get(String ColumnName)
+
+        private Object Get(String ColumnName)
         {
             Object Ret;
             if (nIndex >= dttMain.Rows.Count)
@@ -210,7 +261,7 @@ namespace Phalanx.DataAccess
             return Ret;
         }
 
-        public Object Get(int ColumnNumber)
+        private Object Get(int ColumnNumber)
         {
             Object Ret;
             if (nIndex >= dttMain.Rows.Count)
@@ -220,14 +271,14 @@ namespace Phalanx.DataAccess
             return Ret;
         }
 
-        public Object Get(int RowNumber, int ColumnNumber)
+        private Object Get(int RowNumber, int ColumnNumber)
         {
             Object Ret;
             Ret = dttMain.Rows[RowNumber][ColumnNumber];
             return Ret;
         }
 
-        public Object Get(int RowNumber, string ColumnName)
+        private Object Get(int RowNumber, string ColumnName)
         {
             Object Ret;
             Ret = dttMain.Rows[RowNumber][ColumnName];
@@ -235,22 +286,22 @@ namespace Phalanx.DataAccess
         }
 
 
-        public void Set(String ColumnName, Object Value)
+        private void Set(String ColumnName, Object Value)
         {
             dttMain.Rows[nIndex][ColumnName] = Value;
         }
 
-        public void Set(int ColumnNumber, Object Value)
+        private void Set(int ColumnNumber, Object Value)
         {
             dttMain.Rows[nIndex][ColumnNumber] = Value;
         }
 
-        public void Set(int RowNumber, int ColumnNumber, Object Value)
+        private void Set(int RowNumber, int ColumnNumber, Object Value)
         {
             dttMain.Rows[RowNumber][ColumnNumber] = Value;
         }
 
-        public void Set(int RowNumber, string ColumnName, Object Value)
+        private void Set(int RowNumber, string ColumnName, Object Value)
         {
             dttMain.Rows[RowNumber][ColumnName] = Value;
         }

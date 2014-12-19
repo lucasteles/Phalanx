@@ -64,7 +64,7 @@ namespace Phalanx.DataAccess
              Object ret = AtuSql(cAction, tableName, ref obj, parameters);
 
              if (cAction=='A')
-                Cursor.Set(RuntimeParameters.DefaultPrimaryKeyField, ret);
+                Cursor[RuntimeParameters.DefaultPrimaryKeyField] = ret;
 
              return ret;
          }

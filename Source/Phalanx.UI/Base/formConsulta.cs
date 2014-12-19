@@ -120,7 +120,7 @@ namespace Phalanx.UI.Base
 
 
 
-                    if (func.SimOuNao("Deseja excluir o registro numero " + GRADE.MyCursor.Get(RuntimeParameters.DefaultPrimaryKeyField).ToString()))
+                    if (func.SimOuNao("Deseja excluir o registro numero " + GRADE.MyCursor[RuntimeParameters.DefaultPrimaryKeyField].ToString()))
                     {
                         tmp.AtuSql('D', GRADE.QUERY.TABELA);
                         tmp.Remove();

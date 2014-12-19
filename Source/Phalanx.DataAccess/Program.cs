@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+
 using Phalanx.Common;
 
 namespace Phalanx.DataAccess
@@ -22,7 +23,7 @@ namespace Phalanx.DataAccess
             
            cursor.GoTop();
 
-           cursor.Set("vl_exemplo", 7);
+           cursor["vl_exemplo"] = 7;
            cursor.AtuSql('M',"teste");
             
            Things obj = cursor.ScatterName();
@@ -43,8 +44,8 @@ namespace Phalanx.DataAccess
            while (cursor.ScanEOF())
            {
                Console.Out.Write("-{0} - {1} \n",
-                                  cursor.Get("ds_exemplo"),
-                                  cursor.Get("vl_exemplo"));
+                                  cursor["ds_exemplo"],
+                                  cursor["vl_exemplo"]);
            }
 
            cursor.close();

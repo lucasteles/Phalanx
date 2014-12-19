@@ -7,3 +7,12 @@ C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.DataAccess\bin\Debug\itex
 C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.dll
 C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.pdb
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\Phalanx.DataAccess.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\Phalanx.DataAccess.pdb
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\Phalanx.Common.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\itextsharp.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\Phalanx.Common.pdb
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\itextsharp.xml
+C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.csprojResolveAssemblyReference.cache
+C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.pdb

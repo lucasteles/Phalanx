@@ -2,3 +2,7 @@ C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Business\bin\Debug\Phalan
 C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Business\bin\Debug\Phalanx.Business.pdb
 C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Business\obj\Debug\Phalanx.Business.dll
 C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.Business\obj\Debug\Phalanx.Business.pdb
+C:\Git\Phalanx\Source\Phalanx.Business\bin\Debug\Phalanx.Business.dll
+C:\Git\Phalanx\Source\Phalanx.Business\bin\Debug\Phalanx.Business.pdb
+C:\Git\Phalanx\Source\Phalanx.Business\obj\Debug\Phalanx.Business.dll
+C:\Git\Phalanx\Source\Phalanx.Business\obj\Debug\Phalanx.Business.pdb

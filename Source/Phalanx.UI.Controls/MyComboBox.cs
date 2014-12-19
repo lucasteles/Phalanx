@@ -27,7 +27,9 @@ namespace Phalanx.UI.Controls
             set {
 
                 _Value = value;
-                SelectedValue = value;
+                SelectedValue = _Value;
+                
+                
             } 
         }
 
@@ -139,9 +141,9 @@ namespace Phalanx.UI.Controls
             while(_MyCursor.ScanEOF())
             {
                 if (myKeyAndValue)
-                    combo.Add(MyCursor.Get(0), MyCursor.Get(0).ToString().Trim().PadRight(3,' ') + " - " + MyCursor.Get(1).ToString().Trim().PadRight(50,' '));
+                    combo.Add(MyCursor[0], MyCursor[0].ToString().Trim().PadRight(3,' ') + " - " + MyCursor[1].ToString().Trim().PadRight(50,' '));
                 else
-                    combo.Add(MyCursor.Get(0), MyCursor.Get(1));
+                    combo.Add(MyCursor[0], MyCursor[1]);
             }
 
 
@@ -150,8 +152,12 @@ namespace Phalanx.UI.Controls
             ValueMember = "key";
 
             if (!_Value.IsEmpty())
+            {
                 SelectedValue = _Value;
-
+                var ee = combo.Where(e => e.Key.ToString() == _Value.ToString()).ToDictionary(e => e.Key, e => e.Value);
+                if (!ee.IsEmpty())
+                    SelectedItem = ee.First(); ;
+            }
            // PrivateFontCollection pfc = new PrivateFontCollection();
             //pfc.AddFontFile(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Substring(6) + "\\FIXEDSYS.TTF");
             //this.Font = new Font(pfc.Families[0], 12, FontStyle.Bold);

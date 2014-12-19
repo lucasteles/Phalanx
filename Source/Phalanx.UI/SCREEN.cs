@@ -51,21 +51,21 @@ namespace Phalanx.UI
             while (tmpModulos.ScanEOF())
             {
                 items = new ToolStripMenuItem();
-                items.Name = "menu_id"+tmpModulos.Get("PK_ID").ToString();
+                items.Name = "menu_id"+tmpModulos["PK_ID"].ToString();
                 items.Tag = "";
-                items.Text = tmpModulos.Get("DS_MODULO").ToString();
+                items.Text = tmpModulos["DS_MODULO"].ToString();
                 //items.Click += new EventHandler(MenuItemClickHandler);
 
                 cond = new Condition();
                 cond.Comando = "FK_MODULO = @MODULO";
-                cond["MODULO"] = (int) tmpModulos.Get("PK_ID");
+                cond["MODULO"] = (int) tmpModulos["PK_ID"];
                 tmpTelas = new FoxCursor("SELECT * FROM TS_TELAS {COND} ORDER BY FK_COLUNA,NR_ORDEM", cond);
                 while (tmpTelas.ScanEOF())
                 {
                     subitems = new ToolStripMenuItem();
-                    subitems.Name = "form_" + tmpTelas.Get("DS_FORM").ToString();
-                    subitems.Tag = tmpTelas.Get("DS_FORM").ToString();
-                    subitems.Text = tmpTelas.Get("DS_TELA").ToString();
+                    subitems.Name = "form_" + tmpTelas["DS_FORM"].ToString();
+                    subitems.Tag = tmpTelas["DS_FORM"].ToString();
+                    subitems.Text = tmpTelas["DS_TELA"].ToString();
                     subitems.Click += new EventHandler(RunForm);
 
                     items.DropDownItems.Add(subitems);
@@ -101,8 +101,8 @@ namespace Phalanx.UI
             while (tmpModulos.ScanEOF())
             {
                 tPage = new TabPage();
-                tPage.Tag = tmpModulos.Get("PK_ID").ToString();
-                tPage.Text = tmpModulos.Get("DS_MODULO").ToString();
+                tPage.Tag = tmpModulos["PK_ID"].ToString();
+                tPage.Text = tmpModulos["DS_MODULO"].ToString();
                 tPage.BackColor = Color.White;
 
 
@@ -147,7 +147,7 @@ namespace Phalanx.UI
 
                 cond = new Condition();
                 cond.Comando = "FK_MODULO = @MODULO";
-                cond["MODULO"] = (int)tmpModulos.Get("PK_ID");
+                cond["MODULO"] = (int)tmpModulos["PK_ID"];
                 tmpTelas = new FoxCursor("SELECT * FROM TS_TELAS {COND} ORDER BY FK_COLUNA,NR_ORDEM", cond);
 
 
@@ -157,29 +157,29 @@ namespace Phalanx.UI
                 while (tmpTelas.ScanEOF())
                 {
 
-                    if (col_indiex == -1 || col_indiex != (int)tmpTelas.Get("FK_COLUNA"))
+                    if (col_indiex == -1 || col_indiex != (int)tmpTelas["FK_COLUNA"])
                     {
                         indice = default_indice;
-                        col_indiex = (int)tmpTelas.Get("FK_COLUNA");
+                        col_indiex = (int)tmpTelas["FK_COLUNA"];
                         line = new Label();
                         line.AutoSize = false;
                         line.BackColor = Color.FromArgb(50, 0, 0, 0);
                         line.Width = 1;
                         line.Height = tPage.Height;
                         line.Top = 40;
-                        line.Left = 10 + (((int)tmpTelas.Get("FK_COLUNA")) - 1) * 100; ;
+                        line.Left = 10 + (((int)tmpTelas["FK_COLUNA"]) - 1) * 100;
                         line.Anchor = Anchor = (AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Top);
                         tPage.Controls.Add(line);
                     }
 
 
                     ico = new MyMenuIcon();
-                    ico.MyText = tmpTelas.Get("DS_TELA").ToString();
-                    ico.Tag = tmpTelas.Get("DS_FORM").ToString();
+                    ico.MyText = tmpTelas["DS_TELA"].ToString();
+                    ico.Tag = tmpTelas["DS_FORM"].ToString();
                     ico.SetIcon(ico.Tag + ".png");
                     ico.Run += RunForm;
                     ico.Top = indice;
-                    ico.Left = 10 + (((int)tmpTelas.Get("FK_COLUNA")) - 1) * 100;
+                    ico.Left = 10 + (((int)tmpTelas["FK_COLUNA"]) - 1) * 100;
                     indice += ico.Height;
                     tPage.Controls.Add(ico);
                 }
