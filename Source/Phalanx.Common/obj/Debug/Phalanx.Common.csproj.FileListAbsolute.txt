@@ -11,3 +11,4 @@ C:\Git\Phalanx\Source\Phalanx.Common\bin\Debug\itextsharp.dll
 C:\Git\Phalanx\Source\Phalanx.Common\bin\Debug\itextsharp.xml
 C:\Git\Phalanx\Source\Phalanx.Common\obj\Debug\Phalanx.Common.dll
 C:\Git\Phalanx\Source\Phalanx.Common\obj\Debug\Phalanx.Common.pdb
+C:\Git\Phalanx\Source\Phalanx.Common\obj\Debug\Phalanx.Common.csprojResolveAssemblyReference.cache

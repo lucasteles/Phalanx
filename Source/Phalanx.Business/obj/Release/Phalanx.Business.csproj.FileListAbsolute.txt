@@ -1,0 +1,4 @@
+C:\Git\Phalanx\Source\Phalanx.Business\bin\Release\Phalanx.Business.dll
+C:\Git\Phalanx\Source\Phalanx.Business\bin\Release\Phalanx.Business.pdb
+C:\Git\Phalanx\Source\Phalanx.Business\obj\Release\Phalanx.Business.dll
+C:\Git\Phalanx\Source\Phalanx.Business\obj\Release\Phalanx.Business.pdb

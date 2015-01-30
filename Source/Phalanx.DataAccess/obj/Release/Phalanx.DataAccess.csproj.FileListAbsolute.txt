@@ -1,0 +1,9 @@
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Release\Phalanx.DataAccess.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Release\Phalanx.DataAccess.pdb
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Release\Phalanx.Common.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Release\itextsharp.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Release\Phalanx.Common.pdb
+C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Release\itextsharp.xml
+C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Release\Phalanx.DataAccess.csprojResolveAssemblyReference.cache
+C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Release\Phalanx.DataAccess.dll
+C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Release\Phalanx.DataAccess.pdb

@@ -1,0 +1,6 @@
+C:\Git\Phalanx\Source\Phalanx.Common\bin\Release\Phalanx.Common.dll
+C:\Git\Phalanx\Source\Phalanx.Common\bin\Release\Phalanx.Common.pdb
+C:\Git\Phalanx\Source\Phalanx.Common\bin\Release\itextsharp.dll
+C:\Git\Phalanx\Source\Phalanx.Common\bin\Release\itextsharp.xml
+C:\Git\Phalanx\Source\Phalanx.Common\obj\Release\Phalanx.Common.dll
+C:\Git\Phalanx\Source\Phalanx.Common\obj\Release\Phalanx.Common.pdb
