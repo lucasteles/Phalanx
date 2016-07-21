@@ -42,7 +42,7 @@ namespace Phalanx.UI.Controls
             ComboTable
         }
 
-
+        public bool MyIsF4 { get; set; }
         public Condition condicaoSQL = new Condition();
         public TipoDataFIll myTipoDataSource { get; set; }
         public String controlSource { get; set; }

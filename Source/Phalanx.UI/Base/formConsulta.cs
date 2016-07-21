@@ -201,6 +201,15 @@ namespace Phalanx.UI.Base
 
             if (!String.IsNullOrEmpty(this.MyDigitar))
             {
+
+                if (MyAlterar)
+                {
+
+                    GRADE.AddContextMenu("Incluir", ContextMenuClick);
+
+                    toolMenu.Items["btnInsert"].Visible = true;
+                }
+
                 if (MyInlcuir)
                 {
                     
@@ -209,13 +218,7 @@ namespace Phalanx.UI.Base
                     toolMenu.Items["btnAlterar"].Visible = true;
                 }
 
-                if (MyAlterar)
-                {
-                    
-                    GRADE.AddContextMenu("Incluir", ContextMenuClick);
-
-                    toolMenu.Items["btnInsert"].Visible = true;
-                }
+              
             }
 
            

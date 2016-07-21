@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.myTextBox1 = new Phalanx.UI.Controls.MyTextBox(this.components);
-            this.myTextBox2 = new Phalanx.UI.Controls.MyTextBox(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cntItens1 = new Phalanx.UI.Controls.CntItens();
             this.label3 = new System.Windows.Forms.Label();
             this.myComboBox1 = new Phalanx.UI.Controls.MyComboBox(this.components);
+            this.cntItens1 = new Phalanx.UI.Controls.CntItens();
+            this.myTextBox2 = new Phalanx.UI.Controls.MyTextBox(this.components);
+            this.myTextBox1 = new Phalanx.UI.Controls.MyTextBox(this.components);
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -51,34 +51,6 @@
             // lblID
             // 
             this.lblID.Location = new System.Drawing.Point(10, 373);
-            // 
-            // myTextBox1
-            // 
-            this.myTextBox1.controlSource = "DS_EXEMPLO";
-            this.myTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox1.Location = new System.Drawing.Point(128, 22);
-            this.myTextBox1.MyNoAutoResize = true;
-            this.myTextBox1.MyQtdDecimais = 0;
-            this.myTextBox1.Name = "myTextBox1";
-            this.myTextBox1.PromptChar = ' ';
-            this.myTextBox1.ResetOnSpace = false;
-            this.myTextBox1.Size = new System.Drawing.Size(306, 26);
-            this.myTextBox1.TabIndex = 0;
-            this.myTextBox1.Value = null;
-            // 
-            // myTextBox2
-            // 
-            this.myTextBox2.controlSource = "VL_EXEMPLO";
-            this.myTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox2.Location = new System.Drawing.Point(128, 68);
-            this.myTextBox2.MyNoAutoResize = false;
-            this.myTextBox2.MyQtdDecimais = 0;
-            this.myTextBox2.Name = "myTextBox2";
-            this.myTextBox2.PromptChar = ' ';
-            this.myTextBox2.ResetOnSpace = false;
-            this.myTextBox2.Size = new System.Drawing.Size(181, 26);
-            this.myTextBox2.TabIndex = 1;
-            this.myTextBox2.Value = null;
             // 
             // label1
             // 
@@ -101,20 +73,6 @@
             this.label2.Size = new System.Drawing.Size(42, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "Valor";
-            // 
-            // cntItens1
-            // 
-            this.cntItens1.Location = new System.Drawing.Point(17, 166);
-            this.cntItens1.MyAlterar = true;
-            this.cntItens1.MyCursor = null;
-            this.cntItens1.MyExcluir = true;
-            this.cntItens1.MyInlcuir = true;
-            this.cntItens1.MyParameters = null;
-            this.cntItens1.MyQueryFile = "consulta1_itens";
-            this.cntItens1.Name = "cntItens1";
-            this.cntItens1.Size = new System.Drawing.Size(417, 167);
-            this.cntItens1.TabIndex = 8;
-            this.cntItens1.MyCallForm += new System.EventHandler(this.cntItens1_MyCallForm);
             // 
             // label3
             // 
@@ -144,6 +102,48 @@
             this.myComboBox1.TabIndex = 10;
             this.myComboBox1.Value = null;
             // 
+            // cntItens1
+            // 
+            this.cntItens1.Location = new System.Drawing.Point(17, 166);
+            this.cntItens1.MyAlterar = true;
+            this.cntItens1.MyCursor = null;
+            this.cntItens1.MyExcluir = true;
+            this.cntItens1.MyInlcuir = true;
+            this.cntItens1.MyParameters = null;
+            this.cntItens1.MyQueryFile = "consulta1_itens";
+            this.cntItens1.Name = "cntItens1";
+            this.cntItens1.Size = new System.Drawing.Size(417, 167);
+            this.cntItens1.TabIndex = 8;
+            this.cntItens1.MyCallForm += new System.EventHandler(this.cntItens1_MyCallForm);
+            // 
+            // myTextBox2
+            // 
+            this.myTextBox2.controlSource = "VL_EXEMPLO";
+            this.myTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myTextBox2.Location = new System.Drawing.Point(128, 68);
+            this.myTextBox2.MyNoAutoResize = false;
+            this.myTextBox2.MyQtdDecimais = 0;
+            this.myTextBox2.Name = "myTextBox2";
+            this.myTextBox2.PromptChar = ' ';
+            this.myTextBox2.ResetOnSpace = false;
+            this.myTextBox2.Size = new System.Drawing.Size(181, 26);
+            this.myTextBox2.TabIndex = 1;
+            this.myTextBox2.Value = null;
+            // 
+            // myTextBox1
+            // 
+            this.myTextBox1.controlSource = "DS_EXEMPLO";
+            this.myTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myTextBox1.Location = new System.Drawing.Point(128, 22);
+            this.myTextBox1.MyNoAutoResize = true;
+            this.myTextBox1.MyQtdDecimais = 0;
+            this.myTextBox1.Name = "myTextBox1";
+            this.myTextBox1.PromptChar = ' ';
+            this.myTextBox1.ResetOnSpace = false;
+            this.myTextBox1.Size = new System.Drawing.Size(306, 26);
+            this.myTextBox1.TabIndex = 0;
+            this.myTextBox1.Value = null;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,16 +161,16 @@
             this.Text = "Form2";
             this.MyInit += new System.EventHandler(this.Form2_MyInit);
             this.MyPosOK += new System.EventHandler(this.Form2_MyPosOK);
-            this.Controls.SetChildIndex(this.lblID, 0);
             this.Controls.SetChildIndex(this.myTextBox1, 0);
-            this.Controls.SetChildIndex(this.btnCancelar, 0);
-            this.Controls.SetChildIndex(this.btnOK, 0);
             this.Controls.SetChildIndex(this.myTextBox2, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.cntItens1, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.myComboBox1, 0);
+            this.Controls.SetChildIndex(this.lblID, 0);
+            this.Controls.SetChildIndex(this.btnCancelar, 0);
+            this.Controls.SetChildIndex(this.btnOK, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
