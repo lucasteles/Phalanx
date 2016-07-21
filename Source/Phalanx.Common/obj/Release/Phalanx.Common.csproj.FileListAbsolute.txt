@@ -4,3 +4,15 @@ C:\Git\Phalanx\Source\Phalanx.Common\bin\Release\itextsharp.dll
 C:\Git\Phalanx\Source\Phalanx.Common\bin\Release\itextsharp.xml
 C:\Git\Phalanx\Source\Phalanx.Common\obj\Release\Phalanx.Common.dll
 C:\Git\Phalanx\Source\Phalanx.Common\obj\Release\Phalanx.Common.pdb
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\Phalanx.Common.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\Phalanx.Common.pdb
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\itextsharp.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\NPOI.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\NPOI.OOXML.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\NPOI.OpenXml4Net.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\NPOI.OpenXmlFormats.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\itextsharp.xml
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\bin\Release\NPOI.xml
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\obj\Release\Phalanx.Common.dll
+C:\Users\telesl\Desktop\Phalanx-master\Phalanx-master\Source\Phalanx.Common\obj\Release\Phalanx.Common.pdb

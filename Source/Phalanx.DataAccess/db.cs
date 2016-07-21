@@ -39,7 +39,7 @@ namespace Phalanx.DataAccess
 
             foreach (KeyValuePair<string,TypeSize> item in sch)
             {
-                if (item.Value.type == typeof(int) || item.Value.type == typeof(Int64) || item.Value.type == typeof(Byte))
+                if (item.Value.type == typeof(int) || item.Value.type == typeof(Int64) || item.Value.type == typeof(byte) )
                     ret[item.Key] = 0;
 
                 if (item.Value.type == typeof(String) )

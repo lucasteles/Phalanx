@@ -218,7 +218,7 @@ namespace Phalanx.UI.Base
                     toolMenu.Items["btnAlterar"].Visible = true;
                 }
 
-              
+               
             }
 
            

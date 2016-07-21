@@ -24,7 +24,7 @@ namespace Phalanx.UI
             cntItens1.MyCondicao.Add("TESTEID", this.EE["PK_ID"]);
             cntItens1.MyAmbientar();
 
-            
+            myF4Button1.myTextBox = myTextBox1;
         }
 
         private void cntItens1_MyCallForm(object sender, EventArgs e)
