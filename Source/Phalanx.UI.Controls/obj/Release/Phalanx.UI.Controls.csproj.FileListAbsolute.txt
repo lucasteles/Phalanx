@@ -17,3 +17,5 @@ C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Release\Phalanx.UI.Controls.SuperG
 C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Release\Phalanx.UI.Controls.csproj.GenerateResource.Cache
 C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Release\Phalanx.UI.Controls.dll
 C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Release\Phalanx.UI.Controls.pdb
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Release\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Release\Microsoft.VisualBasic.PowerPacks.Vs.xml

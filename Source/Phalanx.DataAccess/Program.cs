@@ -23,6 +23,8 @@ namespace Phalanx.DataAccess
             
            cursor.GoTop();
 
+            
+
            cursor["vl_exemplo"] = 7;
            cursor.AtuSql('M',"teste");
             

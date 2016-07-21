@@ -258,6 +258,22 @@ namespace Phalanx.UI.Controls
             this.SortedColumn.DataPropertyName);
         }
 
+        public void AddContextMenu(string name, Action<EventArgs> action, bool withSeparator = false)
+        {
+            var ti = new ToolStripMenuItem(name, null, new EventHandler(delegate (Object o, EventArgs a) { action(a); }));            
+            menu.Items.Insert(0, ti);
+
+            if (withSeparator)
+                menu.Items.Insert(0, new ToolStripSeparator());
+
+        }
+
+        public void AddContextMenu(string name, EventHandler handler)
+        {
+            var ti = new ToolStripMenuItem(name, null, handler );
+            menu.Items.Insert(0, ti);
+        }
+
     }
     
 }

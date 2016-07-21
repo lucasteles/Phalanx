@@ -26,10 +26,6 @@ C:\Users\telesl\Downloads\Gitbk\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\Phalanx.UI.exe.config
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.UI.exe
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.UI.pdb
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\database\PhalanxBeta.mdf
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\database\PhalanxBeta_log.ldf
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\database\_PhalanxBeta.mdf
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\database\_PhalanxBeta_log.ldf
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\Phalanx.UI.exe
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\Phalanx.UI.pdb
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Debug\Phalanx.Common.dll
@@ -50,3 +46,12 @@ C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.UI.Form2_itens.resources
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.UI.Properties.Resources.resources
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.UI.SCREEN.resources
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Debug\Phalanx.UI.csproj.GenerateResource.Cache
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\database\database.mdf
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\database\database_log.ldf
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\NPOI.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\NPOI.OOXML.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\NPOI.OpenXml4Net.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Debug\NPOI.xml

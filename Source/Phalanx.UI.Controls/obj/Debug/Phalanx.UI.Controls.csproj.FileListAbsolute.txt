@@ -36,3 +36,11 @@ C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Debug\Phalanx.UI.Controls.SuperGra
 C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Debug\Phalanx.UI.Controls.csproj.GenerateResource.Cache
 C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Debug\Phalanx.UI.Controls.dll
 C:\Git\Phalanx\Source\Phalanx.UI.Controls\obj\Debug\Phalanx.UI.Controls.pdb
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\NPOI.dll
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\NPOI.xml
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\NPOI.OOXML.dll
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\git\Phalanx\Source\Phalanx.UI.Controls\bin\Debug\NPOI.OpenXml4Net.dll

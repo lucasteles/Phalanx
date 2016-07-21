@@ -16,3 +16,9 @@ C:\Git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\itextsharp.xml
 C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.csprojResolveAssemblyReference.cache
 C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.dll
 C:\Git\Phalanx\Source\Phalanx.DataAccess\obj\Debug\Phalanx.DataAccess.pdb
+C:\git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\NPOI.dll
+C:\git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\NPOI.xml
+C:\git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\NPOI.OOXML.dll
+C:\git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\git\Phalanx\Source\Phalanx.DataAccess\bin\Debug\NPOI.OpenXml4Net.dll

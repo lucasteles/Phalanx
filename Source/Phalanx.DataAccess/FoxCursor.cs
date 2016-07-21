@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data;
@@ -6,7 +7,7 @@ using Phalanx.Common;
 
 namespace Phalanx.DataAccess
 {
-    public class FoxCursor
+    public class FoxCursor 
     {
         #region "properties"
            

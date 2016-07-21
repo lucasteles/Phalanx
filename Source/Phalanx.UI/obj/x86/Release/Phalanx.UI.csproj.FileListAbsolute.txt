@@ -1,8 +1,4 @@
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\Phalanx.UI.exe.config
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\database\PhalanxBeta.mdf
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\database\PhalanxBeta_log.ldf
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\database\_PhalanxBeta.mdf
-C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\database\_PhalanxBeta_log.ldf
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\Phalanx.UI.exe
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\Phalanx.UI.pdb
 C:\Git\Phalanx\Source\Phalanx.UI\bin\Release\Phalanx.Common.dll
@@ -25,3 +21,6 @@ C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Release\Phalanx.UI.SCREEN.resources
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Release\Phalanx.UI.csproj.GenerateResource.Cache
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Release\Phalanx.UI.exe
 C:\Git\Phalanx\Source\Phalanx.UI\obj\x86\Release\Phalanx.UI.pdb
+C:\git\Phalanx\Source\Phalanx.UI\bin\Release\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\git\Phalanx\Source\Phalanx.UI\bin\Release\database\database.mdf
+C:\git\Phalanx\Source\Phalanx.UI\bin\Release\database\database_log.ldf

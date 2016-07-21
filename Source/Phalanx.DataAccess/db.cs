@@ -189,9 +189,7 @@ namespace Phalanx.DataAccess
         {
             String strConn = RuntimeParameters.GetDefaultConnection();
             int Ret = 0;
-
-
-           
+                       
                     using (var conn = new SqlConnection(strConn))
                     {
                         conn.Open();

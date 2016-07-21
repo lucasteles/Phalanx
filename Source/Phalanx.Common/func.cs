@@ -7,7 +7,8 @@ using System.Data;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
-
+using NPOI.HSSF.UserModel;
+using NPOI.SS.UserModel;
 
 namespace Phalanx.Common
 {
@@ -89,62 +90,63 @@ namespace Phalanx.Common
 
                 // load excel, and create a new workbook
 
-                Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
-                excelApp.Workbooks.Add();
+                
+                var excelApp = new HSSFWorkbook(); 
+                
 
                 // single worksheet
-                Microsoft.Office.Interop.Excel._Worksheet workSheet = excelApp.ActiveSheet;
+                var workSheet = excelApp.CreateSheet();
 
                 GridHeaderLayout header;
                 // column headings
+
+
+                var headerStyle = excelApp.CreateCellStyle();
+
+                headerStyle.FillBackgroundColor = IndexedColors.LightBlue.Index;
+
+                var headerRow = workSheet.CreateRow(0);
                 for (int i = 0; i < Tbl.Columns.Count; i++)
                 {
                     header =  GetDescColumnNameByXMLFile( Tbl.Columns[i].ColumnName, headerXmlFile);
 
                     if (header != null)
                     {
-                        workSheet.Cells[1, (i + 1)] = header.descricao;
-                        workSheet.Cells[1, (i + 1)].Interior.Color = System.Drawing.Color.LightGray.ToArgb();
+                        headerRow.CreateCell(i).SetCellValue(header.descricao);
 
-                       // if (headerXmlFile != "")
-                         //   workSheet.Cells[1, (i + 1)].ColumnWidth = header.tamanho * 72 / 96; //excel calcula em points nao pixels
+                        headerRow.RowStyle = headerStyle;
+                        
+
+                        // if (headerXmlFile != "")
+                        //   workSheet.Cells[1, (i + 1)].ColumnWidth = header.tamanho * 72 / 96; //excel calcula em points nao pixels
 
                     }
                 }
-                workSheet.Columns.AutoFit();
+                workSheet.CreateFreezePane(0, 1, 0, 1);
 
                 // rows
                 for (int i = 0; i < Tbl.Rows.Count; i++)
                 {
-                    // to do: format datetime values before printing
+                    var row = workSheet.CreateRow(i+1);
+                                        
                     for (int j = 0; j < Tbl.Columns.Count; j++)
                     {
                         header = GetDescColumnNameByXMLFile(Tbl.Columns[j].ColumnName, headerXmlFile);
 
                         if (header != null)
-                            workSheet.Cells[(i + 2), (j + 1)] = Tbl.Rows[i][j];
+                            row.CreateCell(j).SetCellValue(Tbl.Rows[i][j].ToString());
                     }
                 }
 
                 // check fielpath
                 if (ExcelFilePath != null && ExcelFilePath != "")
                 {
-                    try
+                    using (FileStream stream = new FileStream(ExcelFilePath, FileMode.Create, FileAccess.Write))
                     {
-                        workSheet.SaveAs(ExcelFilePath);
-                        excelApp.Quit();
-                        //MessageBox.Show("Excel file saved!");
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception("ExportToExcel: Excel file could not be saved! Check filepath.\n"
-                            + ex.Message);
+                        excelApp.Write(stream);
                     }
                 }
-                else    // no filepath is given
-                {
-                    excelApp.Visible = true;
-                }
+               
             }
             catch (Exception ex)
             {

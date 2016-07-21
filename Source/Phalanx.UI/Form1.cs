@@ -16,9 +16,14 @@ namespace Phalanx.UI
         public Form1()
         {
             InitializeComponent();
-            this.MyExecutar();            
-          
-                  
+            this.MyExecutar();
+
+            
+            GRADE.AddContextMenu("Menu de teste", e => {
+
+                MessageBox.Show("Este é um menu de contexto customizado.");
+
+            }, true);
 
         }
 
@@ -27,6 +32,7 @@ namespace Phalanx.UI
         {
             Things obj = (Things)sender;
             Condition cond = new Condition("FK_TESTE=@ID");
+            
             cond["ID"] = obj["PK_ID"];
             FoxCursor tmp = new FoxCursor("SELECT * FROM TB_ITENSTESTE",cond);
             
@@ -41,7 +47,7 @@ namespace Phalanx.UI
 
         private void GRADE_MyCellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            DataGridView grade = sender as DataGridView;
+            var grade = sender as DataGridView;
             if (grade.Columns[e.ColumnIndex].Name == "VL_EXEMPLO")
                 if ((Decimal)e.Value < 0)
                     e.CellStyle.ForeColor = Color.Red;

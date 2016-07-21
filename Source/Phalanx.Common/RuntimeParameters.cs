@@ -22,10 +22,6 @@ namespace Phalanx.Common
                 con = System.Configuration.ConfigurationManager.ConnectionStrings["LocalDBCon"].ConnectionString;
             
 
-            if (currentDatabase == DataBases.SQLServer)
-                con = System.Configuration.ConfigurationManager.ConnectionStrings["SqlServerCon"].ConnectionString;
-
-
 
             return con;
         }

@@ -187,32 +187,39 @@ namespace Phalanx.UI.Base
             toolMenu.Items["btnInsert"].Visible = false;
             toolMenu.Items["btnAlterar"].Visible = false;
             toolMenu.Items["btnExcluir"].Visible = false;
-          
 
-            Image img = null;
+
+            if (!String.IsNullOrEmpty(this.MyDesativar))
+                GRADE.AddContextMenu("Desativar", ContextMenuClick);
+
+            if (this.MyExcluir)
+            {
+                GRADE.AddContextMenu("Excluir", ContextMenuClick);
+
+                toolMenu.Items["btnExcluir"].Visible = true;
+            }
+
             if (!String.IsNullOrEmpty(this.MyDigitar))
             {
                 if (MyInlcuir)
                 {
-                    GRADE.menu.Items.Add("Alterar", img, new System.EventHandler(ContextMenuClick));
+                    
+                    GRADE.AddContextMenu("Alterar", ContextMenuClick );
+
                     toolMenu.Items["btnAlterar"].Visible = true;
                 }
 
                 if (MyAlterar)
                 {
-                    GRADE.menu.Items.Add("Incluir", img, new System.EventHandler(ContextMenuClick));
+                    
+                    GRADE.AddContextMenu("Incluir", ContextMenuClick);
+
                     toolMenu.Items["btnInsert"].Visible = true;
                 }
             }
 
-            if (this.MyExcluir)
-            {
-                GRADE.menu.Items.Add("Excluir", img, new System.EventHandler(ContextMenuClick));
-                toolMenu.Items["btnExcluir"].Visible = true;
-            }
+           
 
-            if (!String.IsNullOrEmpty(this.MyDesativar))
-                GRADE.menu.Items.Add("Desativar", img, new System.EventHandler(ContextMenuClick));
 
             //starta combos
             foreach (Control item in this.Controls)
