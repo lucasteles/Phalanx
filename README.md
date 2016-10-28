@@ -1,4 +1,4 @@
 Phalanx
 =======
 
-C# Framework (STOPED)
+C# Framework (DEPRECATED)
