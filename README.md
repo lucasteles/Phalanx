@@ -1,4 +1,5 @@
 Phalanx
 =======
+(DEPRECATED)
 
-C# Framework (DEPRECATED)
+C# Framework for winforms dev 
